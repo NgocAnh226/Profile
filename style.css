@@ -111,3 +111,9 @@ a {
     color: pink;
     line-height: 24px;
 }
+
+@media (max-width:739px) {
+    .container {
+        padding: 0 8px;
+    }
+}
