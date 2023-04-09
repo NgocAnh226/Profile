@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <p class="profile_study">Information Technology</p>
+            <div class="profile_avatar" style="background-image: url('./img/avatar.jpg');"></div>
+            <p class="profile_name">Phạm Ngọc Ánh</p>
+            <div class="profile_button">
+                <a href="mailto:phamngocanh032206@gmail.com" class="profile_button-item profile_message">Message</a>
+                <button class="profile_button-item profile_follow">Follow</button>
+            </div>
+            <div class="profile_redirect">
+                <a href="https://www.facebook.com/ngocanhpham.2206/" class="profile_link">
+                    <i class="profile_icon fi fi-brands-facebook"></i>
+                </a>
+                <a href="" class="profile_link">
+                    <i class="profile_icon fi fi-brands-facebook-messenger"></i>
+                </a>
+                <a href="https://github.com/NgocAnh226" class="profile_link">
+                    <i class="profile_icon fi fi-brands-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const follow = document.querySelector('.profile_follow');
+        follow.onclick = function () {
+            if (follow.classList.contains('followed')) {
+                follow.classList.remove('followed');
+                follow.innerHTML = 'Follow';
+            }
+            else {
+                follow.classList.add('followed');
+                follow.innerHTML = 'Following';
+            }
+        }  
+    </script>
+</body>
+
+</html>
